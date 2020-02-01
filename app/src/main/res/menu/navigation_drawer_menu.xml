@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_navigation_drawer_saldos"
+            android:icon="@drawable/ic_sal"
+            android:title="Saldo Global" />
+        <item
+            android:id="@+id/item_navigation_drawer_creditos"
+            android:icon="@drawable/ic_cre"
+            android:title="Saldo de Crédito" />
+        <item
+            android:id="@+id/item_navigation_drawer_traspasos"
+            android:icon="@drawable/ic_tra"
+            android:title="Débito" />
+        <item
+            android:id="@+id/item_navigation_drawer_catalogo"
+            android:icon="@drawable/ic_ben"
+            android:title="Gestión SPEI" />
+        <item
+            android:id="@+id/item_navigation_drawer_inversion"
+            android:title="Retiro de Interés"
+            android:icon="@drawable/ic_inv"/>
+    </group>
+
+    <!-- Sección de configuración -->
+
+    <item android:title="@string/configuracion_item">
+        <menu>
+            <item
+                android:id="@+id/nav_log_out"
+                android:title="Cerrar Sesión"
+                android:icon="@android:drawable/ic_lock_power_off"/>
+        </menu>
+    </item>
+
+
+</menu>

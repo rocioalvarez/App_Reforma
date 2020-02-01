@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:text="Saldo de Crédito:"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saldo_credito"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="text"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="Interés Normal:"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/interes"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="text"
+                android:textAlignment="textEnd"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="Interés Moratorio:"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/moratorio"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="text"
+                android:textAlignment="textEnd"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="Total del pago:"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView19"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/total"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="text"
+                android:textAlignment="textEnd"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="Capital:"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/capital"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="text"
+                android:textAlignment="textEnd"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="IVA:"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iva"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="text"
+                android:textAlignment="textEnd"/>
+        </TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/creditoid"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/cliente"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

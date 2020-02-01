@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_kitkat_height"
+            android:background="?colorPrimary"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_lollipop_height"
+            android:background="?colorPrimaryDark"/>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:inputType="textPersonName"
+                android:id="@+id/id_beneficiario"
+                android:visibility="invisible"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:text="Nombre del Beneficiario:"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nombreBeneficiario"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="5dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:text="RFC o CURP:"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/satRC"
+                android:textColor="@android:color/background_dark"
+                android:maxLength="18"
+                android:layout_marginEnd="60dp"/>
+
+        </TableRow>
+
+        <RadioButton
+            android:text="Activo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beActivo"
+            android:textSize="15sp"
+            android:textColorLink="@android:color/holo_purple"
+            android:checked="true"
+            android:layout_marginStart="280dp"/>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="Tipo cuenta:"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+
+            <Spinner
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/tipoCuenta"
+                android:textSize="16sp"
+                android:textColor="@android:color/background_dark"/>
+
+            <TextView
+                android:text="Tiempo en Activa:"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView71"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/estatus"
+                android:textSize="16sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginEnd="60dp"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="Participante Deseado:"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/catalogos"
+                android:textSize="16sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginEnd="40dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Número de cuenta:"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/cuenta"
+                android:textColor="@android:color/background_dark"
+                android:maxLength="18"
+                android:layout_marginEnd="60dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Reingresa núm de Cuenta:"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/idcuenta"
+                android:textColor="@android:color/background_dark"
+                android:maxLength="18"
+                android:layout_marginEnd="60dp"/>
+        </TableRow>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/estatusC"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/paccion"
+            android:visibility="invisible"/>
+
+
+        <Button
+            android:text="Finalizar"
+            android:id="@+id/btn_fin_altab"
+            android:textColor="@color/md_amber_50"
+            android:background="@drawable/shape"
+            android:layout_marginBottom="67dp"
+            android:layout_marginStart="250dp"
+            android:layout_height="40dp"
+            android:layout_width="150dp"
+            android:backgroundTint="@color/md_blue"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/resultado"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/status_bar_margin_top">
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ToolbarTheme" />
+
+
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="@bool/fitsSystemWindows"
+        app:headerLayout="@layout/navigation_drawer_header"
+        app:menu="@menu/navigation_drawer_menu"
+        app:theme="@style/NavigationViewTheme" />
+
+
+</android.support.v4.widget.DrawerLayout>

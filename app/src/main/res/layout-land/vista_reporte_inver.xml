@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Fecha:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17sp"
+                android:textStyle="normal|bold"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:id="@+id/RFC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:layout_marginStart="12dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Tipo Inversion:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17sp"
+                android:textStyle="normal|bold"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:id="@+id/plazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:layout_marginStart="12dp"  />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Deposito:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17sp"
+                android:textStyle="normal|bold"
+                android:layout_marginStart="12dp" />
+
+            <TextView
+                android:id="@+id/cordenante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:layout_marginStart="12dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Vencimiento:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17sp"
+                android:textStyle="normal|bold"
+                android:layout_marginStart="12dp" />
+
+            <TextView
+                android:id="@+id/vencimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:layout_marginStart="12dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Interes:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17sp"
+                android:textStyle="normal|bold"
+                android:layout_marginStart="12dp" />
+
+            <TextView
+                android:id="@+id/interes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:layout_marginStart="12dp"  />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="Dias:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17sp"
+                android:textStyle="normal|bold"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:id="@+id/dias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:layout_marginStart="12dp"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="Inversionid:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/inversionid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

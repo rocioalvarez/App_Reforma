@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fondo_horizontal"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_width="8000dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:text="Abono a Créditos"
+            android:id="@+id/btn_ab"
+            android:drawableStart="@drawable/abono"
+            android:backgroundTint="@color/md_blue"
+            android:textColor="@color/md_amber_50"
+            android:background="@drawable/shape"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="150dp"/>
+
+        <Button
+            android:text="Saldos de Crédito"
+            android:id="@+id/btn_saldos_cre"
+            android:drawableStart="@drawable/saldo_credito"
+            android:backgroundTint="@color/md_blue"
+            android:textColor="@color/md_amber_50"
+            android:textSize="20sp"
+            android:background="@drawable/shape"
+            android:textAllCaps="false"
+            android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:layout_marginBottom="85dp"
+            android:layout_marginStart="150dp"/>
+
+
+   </LinearLayout>
+
+</RelativeLayout>

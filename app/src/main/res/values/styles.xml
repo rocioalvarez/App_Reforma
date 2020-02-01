@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:colorPrimaryDark">@color/md_blue</item>
+    </style>
+
+    <style name="Base.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_blue</item>
+        <item name="colorPrimaryDark">@color/md_black_1000</item>
+        <item name="colorAccent">@color/md_pink_500</item>
+        <item name="colorControlHighlight">@color/md_indigo_500_25</item>
+        <item name="android:windowBackground">@color/md_white_1000</item>
+
+
+        <item name="android:statusBarColor">@android:color/white</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent="AppTheme">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="NavigationViewTheme" parent="AppTheme">
+        <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="FloatingActionButtonStyle" parent="AppTheme">
+        <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>

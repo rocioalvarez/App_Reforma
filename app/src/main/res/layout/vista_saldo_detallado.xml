@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/post_border_background">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tbleRoow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15sp"
+                    android:textColor="@color/md_pink_300"
+                    android:textAlignment="textStart"
+                    android:textStyle="italic"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbleRoow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+
+                <TextView
+                    android:id="@+id/descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"/>
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tbleRoow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="40dp">
+
+                <TextView
+                    android:text="Depósito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:textSize="14sp"
+                    android:textColor="@color/md_black_1000_75"/>
+
+                <TextView
+                    android:id="@+id/deposito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/md_black_1000_75"
+                    android:textAlignment="textEnd"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbleRoow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="40dp">
+
+                <TextView
+                    android:text="Retiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView20"
+                    android:textSize="14sp"
+                    android:textColor="@color/md_black_1000_75"/>
+
+                <TextView
+                    android:id="@+id/retiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/md_black_1000_75"
+                    android:textAlignment="textEnd"/>
+            </TableRow>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:id="@+id/referencia"
+            android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Transferir"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView23"
+        android:drawable="@drawable/flujo"
+        android:textColor="@color/md_blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="17dp"
+        android:divider="@drawable/list_divider"/>
+
+    <TextView
+        android:text="Selecciona el tipo de operación"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/md_blue"
+        android:textSize="17sp"
+        android:layout_marginStart="5dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        style="@style/Widget.AppCompat.ListView.DropDown"
+        android:divider="@drawable/list_divider"
+        android:background="@drawable/shape"
+        android:id="@+id/lista_spei" />
+
+
+</LinearLayout>

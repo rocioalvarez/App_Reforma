@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingsActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <Button
+        android:text="TraspasoTerceros"
+        android:id="@+id/btn_terceros"
+        android:drawableStart="@drawable/traspaso_cuentast"
+        android:textColor="@color/md_amber_50"
+        android:background="@drawable/shape"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:backgroundTint="@color/md_blue"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginStart="50dp"/>
+</menu>

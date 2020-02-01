@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soma.estadias2017.app_002">
+
+    <!-- PERMISOS -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- PERMISO HUELLA -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name=".Globals"
+        android:allowBackup="true"
+        android:icon="@drawable/reforma"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolbarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PruebaMovi"
+            android:screenOrientation="portrait" />
+
+
+        <!-- MODULO SALDOS -->
+        <activity
+            android:name=".Saldos"
+            android:label="Saldos"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- MODULO HUELLA -->
+        <activity
+            android:name=".Huella.FingerprintActivity"
+            android:label="Saldos"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Huella.FingerprintMainSaldo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Huella.FingerprintMainTerceros"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Huella.FingerprintMainMovimientos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Huella.FingerprintMainCreditos"
+            android:screenOrientation="portrait" />
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity
+            android:name=".SaldoGlobal"
+            android:label="Saldos"
+            android:parentActivityName=".Saldos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SaldoDetallado"
+            android:label="Movimientos"
+            android:parentActivityName=".Saldos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ListaSaldoDetallado"
+            android:label="Movimientos"
+            android:parentActivityName=".Saldos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- MODULO CREDITOS -->
+        <activity
+            android:name=".Creditos"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SaldosCredito"
+            android:label="Saldos de Crédito"
+            android:parentActivityName=".Creditos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SaldosCreditoD"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AbonoCreditos"
+            android:label="Abono a Créditos"
+            android:parentActivityName=".Creditos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- MODULO CATALOGOS -->
+        <activity
+            android:name=".Catalogos"
+            android:label="Catálogos"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AltaBeneficiario"
+            android:label="Alta Beneficiario"
+            android:parentActivityName=".Catalogos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ActualizarBeneficiario"
+            android:label="Actualizar Beneficiario"
+            android:parentActivityName=".Catalogos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- MODULO INVERSION -->
+        <activity
+            android:name=".Inversion"
+            android:label="Inversión"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Invertir"
+            android:label="Invertir"
+            android:parentActivityName=".Inversion"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ReporteInversion"
+            android:label="Reporte"
+            android:parentActivityName=".Inversion"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".RetiroInteres"
+            android:label="Retiro"
+            android:parentActivityName=".Inversion"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".FormRetiroInteres"
+            android:label="Retiro Interes"
+            android:parentActivityName=".Inversion"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- MODULO TRANSFERENCIAS -->
+        <activity
+            android:name=".Transferencias"
+            android:label="Transferencias"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".TraspasoTerceros"
+            android:label="Traspaso Terceros"
+            android:parentActivityName=".Transferencias"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ComprobanteTraspasoTerceros"
+            android:label="Traspaso Terceros"
+            android:parentActivityName=".TraspasoTerceros"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CuentasPropias"
+            android:label="Traspaso Cuentas Propias"
+            android:parentActivityName=".Transferencias"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ComprobanteCuentasP"
+            android:parentActivityName=".Transferencias"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".PrincipalSpei"
+            android:label="SPEI"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".NuevoSpei"
+            android:label="Nuevo SPEI"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".GestionSpei"
+            android:label="Gestión SPEI"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".EnviarSpei"
+            android:label="Enviar SPEI"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".FormGestionSpei"
+            android:label="Gestión SPEI"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".FormEnviarSpei"
+            android:label="Enviar SPEI"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SpeiLista"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CargarOrdenSpei"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CatalogoOrden"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ComprobanteSpei"
+            android:label="Comprobantes"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".NuevoPDF"
+            android:parentActivityName=".PrincipalSpei"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".PagoServicios"
+            android:label="Pago de Servicios"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ComprobantePS"
+            android:label="Pago de Servicios"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".RecargasElectronicas"
+            android:label="Recargas Electrónicas"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ComprobanteRE"
+            android:label="Recargas Electrónicas"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

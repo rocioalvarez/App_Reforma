@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Referencia"
+           android:id="@+id/textV01"
+           android:textColor="@android:color/background_dark"
+           android:textSize="18dp"
+           android:textStyle="normal|bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="120dp"
+           android:text="La Referencia es la que se encuentra ubicada en tu recibo de pago del servicio y puede ser el número de contrato, servicio, cuenta, matrícula, etc."
+           android:id="@+id/textV02"
+           android:textSize="17dp"
+           android:textColor="@android:color/background_dark"
+           android:layout_marginTop="5dp"
+            android:textAlignment="textStart" />
+        </TableRow>
+
+</LinearLayout>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_marginTop="40dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp" >
+
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="Estado:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt"
+                    android:textStyle="normal|bold"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:id="@+id/nombre_estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Concepto:"
+                    android:textColor="#000000"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="17sp"
+                    android:textStyle="normal|bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:id="@+id/concepto_pago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="Clave:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView34"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="17sp"
+                    android:textStyle="normal|bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clave_rastreo"
+                    android:textSize="15sp"
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="Beneficiario:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView35"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombre_b"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="Monto:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView38"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monto_pago"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="Comisión:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView42"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/comision"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Fecha:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView39"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fecha_pago"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/nombre_o"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/numero_cuenta_o"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/rfc_curp_o"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/rfc_curp_b"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/numero_cuenta_b"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow2f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/concepto"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:id="@+id/tableRow2h"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/ref_numerica"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2j"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/iva_pago"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/pagos_speiid"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/clave_p_b"
+                    android:textColor="@color/md_black_1000"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
